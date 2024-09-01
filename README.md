@@ -10,8 +10,11 @@
 $ git clone https://github.com/Anoto-ecossistem/awesomeideas.git
 ```
 
-2. run `pnpm install` or `npm install` 
-3. run php artisan serve
+2. run `pnpm install` or `npm install`
+3. npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p / config [tailwind](https://tailwindcss.com/docs/guides/laravel) 
+4. npm run dev
+5. run php artisan serve
 
 ### Project Structure
 
