@@ -23,32 +23,31 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900">
+        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter bg-sky-950">
         
-            <div class="max-w-7xl mx-auto p-6 lg:p-8">
+            <div class="max-w-9xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                   <h1 class="maintext">AwesomeIdeas</h1>
+                   <h1 class="text-white">AwesomeIdeas</h1>
                 </div>
+                <p class="mt-5">Search for repos in github with awesome ideas <br> and awesome results</p>
 
                 <div class="mt-16">
                     <div class="relative flex">
-                        <div>
-                            <input
-    type="search"
-    class="relative m-0 -me-0.5 block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
-    placeholder="Search"
-    aria-label="Search"
-    id="exampleFormControlInput3"
-    aria-describedby="button-addon3" />
-  <button
-    class="z-[2] inline-block rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
-    data-twe-ripple-init
-    data-twe-ripple-color="white"
-    type="button"
-    id="button-addon3">
-    Search
-  </button>       
-                        </div>
+                        <input
+                            type="search"
+                            class="relative m-0 -me-0.5 block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
+                            placeholder="Search"
+                            aria-label="Search"
+                            id="exampleFormControlInput3"
+                            aria-describedby="button-addon3" />
+                        <button
+                            class="text-white z-[2] rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-850 dark:focus:bg-blue-950"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="white"
+                            type="button"
+                            id="button-addon3">
+                            Search
+                        </button>
                     </div>
                 </div>
 
