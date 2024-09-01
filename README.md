@@ -38,7 +38,9 @@ Inside of your Awesome project, you'll see the following folders and files:
 ├── package-lock.json
 ├── package.json
 ├── phpunit.xml
+├── postcss.config.js
 ├── README.md
+├── tailwind.config.js
 └── vite.config.js
 ```
 
