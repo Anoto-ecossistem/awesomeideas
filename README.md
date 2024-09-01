@@ -1,3 +1,47 @@
+<h1>AwesomeIdeas</h1>
+
+<h2>A simple Search for good repos in github</h2>
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+$ git clone https://github.com/Anoto-ecossistem/awesomeideas.git
+```
+
+2. run `pnpm install` or `npm install` 
+3. run php artisan serve
+
+### Project Structure
+
+Inside of your Awesome project, you'll see the following folders and files:
+
+```
+├── vite/
+├── app/
+├── bootstrap/
+├── config/
+├── database/
+├── node_modules/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   ├── views/ Welcome.blade.php
+├── routes
+├── storage
+├── tests
+├── vendor
+├── composer.json
+├── composer.lock
+├── package-lock.json
+├── package.json
+├── phpunit.xml
+├── README.md
+└── vite.config.js
+```
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
