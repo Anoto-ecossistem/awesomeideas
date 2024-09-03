@@ -1,5 +1,8 @@
 <h1>AwesomeIdeas</h1>
 
+![Captura de tela 2024-09-03 124727](https://github.com/user-attachments/assets/17983a90-d19c-42b6-a184-09a6a9780424)
+
+
 <h2>A simple Search for good repos in github</h2>
 
 ## Installation
