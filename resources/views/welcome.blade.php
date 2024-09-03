@@ -49,6 +49,21 @@
                             Search
                         </button>
                     </div>
+
+
+                    @if(!empty($repositories))
+                        @foreach($repositories as $repo)
+                            <h2>{{ $repo['name'] }}</h2>
+                            <p><strong>Description:</strong> {{ $repo['description'] }}</p>
+                            <p><strong>Stars:</strong> {{ $repo['stargazers_count'] }}</p>
+                            <p><strong>Forks:</strong> {{ $repo['forks_count'] }}</p>
+                            <p><strong>Owner:</strong> {{ $repo['owner']['login'] }}</p>
+                            <p><a href="{{ $repo['html_url'] }}">Repository Link</a></p>
+                            <hr>
+                        @endforeach
+                    @else
+                        <p>No popular repositories found.</p>
+                    @endif
                 </div>
 
                 <div class="flex justify-center mt-20 px-0 sm:items-center sm:justify-between">

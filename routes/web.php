@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/repositories', [GitHubController::class, 'getRepositories']);
+Route::get('/repositories', [GitHubController::class, 'showRepositories']);
