@@ -1,6 +1,7 @@
 <h1>AwesomeIdeas</h1>
 
-![Captura de tela 2024-09-03 124727](https://github.com/user-attachments/assets/17983a90-d19c-42b6-a184-09a6a9780424)
+![Captura de tela 2024-09-03 170517](https://github.com/user-attachments/assets/deede304-e78b-41df-a674-c24083e4d8f8)
+
 
 
 <h2>A simple Search for good repos in github</h2>
