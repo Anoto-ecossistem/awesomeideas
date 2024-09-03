@@ -58,7 +58,7 @@
                             <p><strong>Stars:</strong> {{ $repo['stargazers_count'] }}</p>
                             <p><strong>Forks:</strong> {{ $repo['forks_count'] }}</p>
                             <p><strong>Owner:</strong> {{ $repo['owner']['login'] }}</p>
-                            <p><a href="{{ $repo['html_url'] }}">Repository Link</a></p>
+                            <p><a href="{{ $repo['html_url'] }}" target="_blank">Repository Link</a></p>
                             <hr>
                         @endforeach
                     @else
