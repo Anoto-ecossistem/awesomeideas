@@ -1,6 +1,7 @@
 <h1>AwesomeIdeas</h1>
 
-![Captura de tela 2024-09-03 170517](https://github.com/user-attachments/assets/deede304-e78b-41df-a674-c24083e4d8f8)
+![Captura de tela 2024-09-04 160734](https://github.com/user-attachments/assets/f1adc6e9-bf7b-4e65-b49a-f1fc1810d345)
+
 
 
 
