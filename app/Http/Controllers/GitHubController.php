@@ -42,9 +42,21 @@ class GitHubController extends Controller
         }
     }
 
-    public function showRepositories() {
-        $repositories = $this->getRepositories();
-    
-        return view('welcome', ['repositories' => $repositories]);
+    public function searchRepositories(Request $request) {
+        $searchTerm = $request->input('search', 'stars:>10000');
+        $response = Http::withOptions([
+            'verify' => false,
+        ])->get("https://api.github.com/search/repositories", [
+            'q' => $searchTerm,
+            'sort' => 'stars',
+            'order' => 'desc',
+        ]);
+
+        if ($response->successful()) {
+            $data = $response->json();
+            return view('welcome', ['repositories' => $data['items']]);
+        } else {
+            return view('welcome', ['repositories' => [], 'error' => "Error: " . $response->status()]);
+        }
     }
 }
