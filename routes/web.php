@@ -15,7 +15,7 @@ use App\Http\Controllers\GitHubController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/repositories', [GitHubController::class, 'searchRepositories'])->name('searchRepositories');
