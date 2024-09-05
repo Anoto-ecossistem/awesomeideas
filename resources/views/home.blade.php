@@ -26,49 +26,43 @@
         <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter bg-neutral-950">
         
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
-                <div class="flex justify-center">
+                <div class="flex justify-center mb-20">
                    <h1 class="text-white">Awesome Ideas</h1>
                 </div>
-                <p class="mt-5 text-white">Search for repos in github with awesome ideas and awesome results....</p>
+                <p class="mt-6 text-white">AwesomeIdeas: Generating Fresh Concepts from Top-Rated Repositories
+                    <br>
+                    <br>
+                    AwesomeIdeas is an innovative platform designed to generate new project ideas by analyzing the most-starred repositories on GitHub. Our mission is to streamline the brainstorming process by providing inspiration drawn from the most popular and well-regarded projects within the developer community.
+                    <br>
+                    <br>
+                    By leveraging data from repositories with the highest star counts, AwesomeIdeas transforms top-rated projects into creative and actionable concepts. Whether you’re a developer looking for your next big challenge or an entrepreneur in search of the perfect idea for your new venture, our tool makes discovering valuable and trend-setting inspirations easier than ever.
+                    <br>
+                    <br>
+                    Dive into AwesomeIdeas to explore, create, and turn highly-rated projects into your next breakthrough.
+                </p>
 
-                <div class="mt-16">
-                    <div class="relative flex">
-                        <form class="relative flex" {{ route('searchRepositories') }} method="GET">
-                            <input
-                            name="search"
-                            type="search"
-                            class="input__size relative m-0 -me-0.5 block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
-                            placeholder="Search for a Awesome repo.."
-                            aria-label="Search"
-                            id="exampleFormControlInput3"
-                            aria-describedby="button-addon3" />
-                            <button
-                                class="text-white z-[2] rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-850 dark:focus:bg-blue-950"
-                                data-twe-ripple-init
-                                data-twe-ripple-color="white"
-                                type="submit"
-                                id="button-addon3">
-                                Search
-                            </button>
-                        </form>
-                    </div>
+                <div class="flex flex-row mt-10 ml-96">
+                    <button
+                        class="text-white ml-24 rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-850 dark:focus:bg-blue-950"
+                        data-twe-ripple-init
+                        data-twe-ripple-color="white"
+                        type="submit"
+                        id="button-addon3">
+                        About
+                    </button>
 
-
-                    @if(!empty($repositories))
-                        @foreach($repositories as $repo)
-                            <h2 class="mt-5 text-white">{{ $repo['name'] }}</h2>
-                            <p class="text-white"><strong>Description:</strong> {{ $repo['description'] }}</p>
-                            <p class="text-white"><strong>Stars:</strong> {{ $repo['stargazers_count'] }}</p>
-                            <p class="text-white"> <strong>Forks:</strong> {{ $repo['forks_count'] }}</p>
-                            <p class="text-white"><strong>Owner:</strong> {{ $repo['owner']['login'] }}</p>
-                            <p class="mb-5 text-white"><a href="{{ $repo['html_url'] }}" target="_blank">Repository Link</a></p>
-                            <hr>
-                        @endforeach
-                    @else
-                        <p>No popular repositories found.</p>
-                    @endif
+                    <form action={{ route('searchRepositories') }} method="GET">
+                        <button
+                            class="text-white ml-5 rounded-e border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary transition duration-150 ease-in-out hover:border-primary-accent-300 hover:bg-primary-50/50 hover:text-primary-accent-300 focus:border-primary-600 focus:bg-primary-50/50 focus:text-primary-600 focus:outline-none focus:ring-0 active:border-primary-700 active:text-primary-700 dark:text-primary-500 dark:hover:bg-blue-850 dark:focus:bg-blue-950"
+                            data-twe-ripple-init
+                            data-twe-ripple-color="white"
+                            type="submit"
+                            id="button-addon3">
+                            Search
+                        </button>
+                    </form>
                 </div>
-
+            
                 <div class="flex justify-center mt-20 px-0 sm:items-center sm:justify-between">
                     <div class="text-center text-sm sm:text-left">
                         &nbsp;
