@@ -19,3 +19,8 @@ Route::get('/', function () {
 });
 
 Route::get('/repositories', [GitHubController::class, 'searchRepositories'])->name('searchRepositories');
+
+
+Route::get('/about', function () {
+    return view('about');
+})->name('aboutpage');
